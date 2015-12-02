@@ -1,0 +1,145 @@
+/* Layout */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    padding: 2px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #666;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #BBB;
+    border: solid 1px #444;
+}
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #222;
+    background: #CCC;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    float: left;
+    height: 8em;
+    padding: .5em .5em .5em 0;
+}
+.wrapper {
+    overflow: auto;
+    flex: 1 1 auto;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    font-family: "Century Gothic", helvetica, arial, sans-serif;
+}
+.content {
+    flex: 1 1 0%;
+    overflow: auto;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    min-height: 6em;
+    text-align: center;
+}
+header {
+    color: white;
+    background: #555;
+    padding: 0 2em;
+    height: 10em;
+    min-height: 10em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    background: #111;
+    text-align: center;
+    padding: .3em;
+}
+.logo-footer {
+    height: 1.2em;
+    margin: -0.1em 0 -0.2em .7em;
+    border: none;
+}
+footer a {
+    color: white;
+    display: inline-block;
+    opacity: 0.1;
+    font-size: 1em;
+    font-style: normal;
+    text-decoration: none;
+    transition: opacity .2s;
+}
+footer a:last-child {
+    opacity: 0.5;
+}
+footer a:hover {
+    opacity: 1;
+}
+h1 {
+    margin-left: .2em;
+    font-weight: normal;
+    font-size: 4em;
+}
+h2 {
+    margin: 2em 1em;
+    font-size: 1.2em;
+    font-weight: normal;
+    text-align: center;
+    user-select: text;
+    cursor: auto;
+}
+.project {
+    width: 80%;
+    margin: 0 auto;
+    background: #AAA;
+    border-radius: 3em;
+    padding: 1em;
+    transition: padding .3s ease-in-out;
+}
+.project img {
+    width: 100%;
+    border-radius: 2em;
+}
+.project:hover {
+    padding: 1.2em;
+}
+.project details p {
+    text-align: left;
+}
+.project a {
+    color: #222;
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+}
+.langlist {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.langlist li {
+    padding: .3em;
+    margin: .2em;
+    background: #BBB;
+    border-radius: .5em;
+}
