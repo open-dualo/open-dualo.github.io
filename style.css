@@ -108,6 +108,7 @@ h2 {
 }
 .project {
     width: 80%;
+    max-width: 50em;
     margin: 0 auto;
     background: #AAA;
     border-radius: 3em;
